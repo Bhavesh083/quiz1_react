@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+  * {
+    font-family: "Verdana", cursive, sans-serif;
+    color: #ffffff;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .app {
+    background: #e53935;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #e35d5b, #e53935);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 450px;
+    min-height: 200px;
+    height: min-content;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .score-section {
+    display: flex;
+    font-size: 24px;
+    font-weight: 900;
+    align-items: center;
+  }
+  .question-section {
+    width: 100%;
+    position: relative;
+  } 
+  .question-count {
+    margin-bottom:20px;
+  }
+  .question-count span {
+    font-size: 23px;
+  }
+  .question-text {
+    margin-bottom: 12px;
+    font-weight: 900;
+  }
+  .answer-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  button {
+    width: 100%;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #071752;
+    border-radius: 10px;
+    display: flex;
+    padding: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid #d8cacf;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #d8b6d3;
+    color: black;
+  }
+  button:focus {
+    outline: none;
+    background-color: rgb(92, 158, 27);
+  }  
+  .next{
+      background-color: rgb(35, 19, 65);
+      font-weight: 900;
+      display: flex;
+      height: min-content;
+      justify-content: center;
+      align-self: flex-end;
+      padding: 2px;
+      border: 3px solid #fff;
+      width: 50%;
+  }
+  .next:focus{
+      background-color: rgb(89, 89, 133);
+  }
+  @media screen and (max-width:600px){
+       .app{
+           width:350px;
+       }
+  }
+  @media screen and (max-width:450px){
+    .app{
+        width:280px;
+    }
+}
+  
